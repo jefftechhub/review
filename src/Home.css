@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+:root {
+  --primaryColor: #645cff;
+  --background: #c1beff;
+}
+body {
+  background-color: #e5e5e5;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+}
+.container {
+  width: 600px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+  padding: 30px;
+  border-radius: 9px;
+  border: 1px solid #d6d2d2;
+}
+.image-section {
+  position: relative;
+}
+
+img {
+  width: 150px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 15px solid var(--primaryColor);
+  box-sizing: content-box;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+}
+.icon {
+  position: absolute;
+  top: 25%;
+  left: -7%;
+  background-color: var(--primaryColor);
+  font-size: 2rem;
+  padding: 8px 9px;
+  border-radius: 50%;
+  color: #ffffff;
+}
+h1 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+h2 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: var(--primaryColor);
+}
+.btn {
+  display: flex;
+  gap: 40px;
+  margin: 10px;
+}
+.btn button {
+  color: var(--primaryColor);
+  border: none;
+  background-color: transparent;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+.btn button:hover {
+  color: var(--background);
+  transition: 0.3s ease-in-out;
+}
+.suprise {
+  background-color: var(--background);
+  color: var(--primaryColor);
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.suprise:hover {
+  color: var(--background);
+  background-color: var(--primaryColor);
+  transition: 0.4s ease-in-out;
+}
+.showBtn {
+  border: none;
+  text-decoration: underline;
+  background-color: transparent;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  margin: 0 10px;
+  color: var(--primaryColor);
+  cursor: pointer;
+}
+@media (max-width: 770px) {
+  .container {
+    width: 90vw;
+    gap: 10px;
+    padding: 20px 15px;
+    text-align: center;
+  }
+  img {
+    width: 90px;
+    height: 95px;
+    border: 8px solid var(--primaryColor);
+    box-sizing: content-box;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+  }
+  .icon {
+    left: -10%;
+    font-size: 1.4rem;
+    padding: 6px;
+  }
+  h1 {
+    font-size: 1.1rem;
+  }
+  h2 {
+    font-size: 0.7rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+
+  .btn button {
+    font-size: 1.5rem;
+  }
+
+  .suprise {
+    padding: 8px 15px;
+    font-size: 0.7rem;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 2px;
+  }
+}
